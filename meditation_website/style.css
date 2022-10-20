@@ -41,7 +41,141 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+/* Utility Classes */
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: var(--borderRadius2);
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+.btn-primary {
+  background-color: var(--baseShade1);
+  border: 0.3rem solid var(--baseShade1);
+  color: var(--whiteShade1);
+}
+.btn-primary:hover {
+  background-color: var(--baseShade2);
+  border: 0.3rem solid var(--baseShade2);
+}
+.btn-secondary {
+  background-color: var(--whiteShade1);
+  border: 0.3rem solid var(--baseShade1);
+  color: var(--baseShade1);
+}
+.btn-secondary:hover {
+  border: 0.3rem solid var(--baseShade2);
+  color: var(--baseShade2);
+}
+h1 {
+  font-size: var(--headingFontSize1);
+  margin-bottom: 2rem;
+  word-spacing: 1rem;
+  line-height: 1.6;
+}
+h2 {
+  font-size: var(--headingFontSize2);
+}
+h3 {
+  font-size: var(--headingFontSize3);
+}
+h4 {
+  font-size: var(--headingFontSize4);
+}
+button,
+p,
+input[type='email'] {
+  font-size: var(--baseFontSize);
+  color: var(--blackShade2);
+  line-height: 1.8;
+  font-weight: 400;
+}
 
 /* Scroll Indicator */
+.progress-container {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.8rem);
+}
+#progress {
+  width: 100%;
+  height: 100%;
+  background-color: var(--baseShade1);
+}
 
 /* Navigation */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.8rem);
+}
+#logo {
+  font-size: var(--headingFontSize4);
+  font-weight: 700;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+nav a {
+  color: var(--blackShade1);
+  text-decoration: none;
+  display: block;
+  position: relative;
+  font-size: var(--headingFontSize4);
+}
+/* Navigation link hover */
+nav li a::before {
+  position: absolute;
+  content: '';
+  background-color: transparent;
+  width: 0%;
+  height: 50%;
+  bottom: 0;
+  z-index: -1;
+  margin-left: -5%;
+  transition: all 0.5s;
+}
+nav li a:hover::before {
+  background-color: var(--baseShade1);
+  width: 110%;
+}
+/* Active SideNav Menu */
+/* Sticky Menu */
+
+/* Header */
+header {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 2rem;
+  align-items: center;
+}
+.hero-text p {
+  text-align: justify;
+}
+header img {
+  display: block;
+  width: 100%;
+}
+.hero-btns {
+  display: flex;
+  gap: 2rem;
+}
+.hero-btns button {
+  margin-top: 2rem;
+}
