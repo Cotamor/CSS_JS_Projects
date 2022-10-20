@@ -1,0 +1,179 @@
+:root {
+  --primary: #d52f31;
+  --primaryDark: #be272a;
+  --primaryLight: #ed5650;
+  --accent: #ff8e00;
+  --bkg: #f8d76e;
+  --secondary: #181312;
+  --secondaryLight: #2a2222;
+  --secondaryLight2: #2c2c2c;
+  --white: #fefefe;
+  --gray: #868686;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bkg);
+  caret-color: transparent;
+}
+.player {
+  font-size: 10px;
+  position: absolute;
+  margin: auto;
+  inset: 0;
+  width: 28.12em;
+  height: 17.5em;
+  background-color: var(--primary);
+  border-radius: 0.62em;
+  box-shadow: 0 0.75em 0 0 var(--primaryDark);
+}
+.record {
+  position: absolute;
+  width: 15.62em;
+  height: 15.62em;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  margin: auto;
+  inset-block: 0;
+  left: 1.87em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.record::before,
+.record::after {
+  position: absolute;
+  content: '';
+  border: 0.5em solid transparent;
+  border-top-color: var(--secondaryLight2);
+  border-bottom-color: var(--secondaryLight2);
+  border-radius: 50%;
+}
+.record::before {
+  width: 9.37em;
+  height: 9.37em;
+}
+.record::after {
+  width: 12.5em;
+  height: 12.5em;
+}
+.label {
+  position: absolute;
+  width: 4.68em;
+  height: 4.68em;
+  border-radius: 50%;
+  border: 1.87em solid var(--accent);
+}
+.tone-arm {
+  position: absolute;
+  width: 0.5em;
+  height: 8.12em;
+  background-color: var(--white);
+  top: 3.75em;
+  left: 19.37em;
+  transform-origin: top center;
+  /* to 22deg when turned on */
+  transition: 1s;
+  transform: rotate(0deg);
+}
+.tone-arm::before {
+  position: absolute;
+  content: '';
+  width: 0.5em;
+  height: 2.5em;
+  background-color: var(--white);
+  bottom: -2.18em;
+  left: -0.56em;
+  transform: rotate(30deg);
+}
+.tone-arm::after {
+  position: absolute;
+  content: '';
+  width: 1.25em;
+  border-top: 1.56em solid var(--gray);
+  border-left: 0.25em solid transparent;
+  border-right: 0.25em solid transparent;
+  bottom: -3.37em;
+  left: -1.87em;
+  transform: rotate(30deg);
+}
+.control {
+  position: absolute;
+  width: 2.81em;
+  height: 2.81em;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  border: 0.62em solid var(--secondaryLight2);
+  top: -1.37em;
+  left: -1.12em;
+}
+.btn {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: var(--primaryLight);
+  bottom: 1.25em;
+  right: 1.87em;
+  border: 0.37em solid var(--primaryDark);
+  border-radius: 50%;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/* Bug: slider doesn't responde to media query. need to be fixed. */
+.slider {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  position: absolute;
+  transform: rotate(-90deg);
+  width: 9.37em;
+  height: 0.93em;
+  top: 5.25em;
+  right: -1.56em;
+  background-color: var(--primaryDark);
+  border: 0.37em solid var(--primaryLight);
+  border-radius: 0.31em;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  width: 0.62em;
+  height: 1.12em;
+  background-color: var(--white);
+  cursor: pointer;
+  outline: none;
+}
+.slider::-moz-range-thumb {
+  appearance: none;
+  width: 0.62em;
+  height: 1.12em;
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+.play {
+  transform: rotate(25deg);
+  transition: 1s;
+}
+.on {
+  animation: spin 3s 1s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .player {
+    font-size: 16px;
+  }
+}
