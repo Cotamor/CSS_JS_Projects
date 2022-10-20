@@ -1,0 +1,47 @@
+/* Base Style */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:not(i) {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary: #018b95;
+  --primary2: #7ecdc8;
+  --secondary: #ffc66c;
+  --accent: #a9494a;
+  --bkg: #daf0fe;
+  --bkgDark: #c0e1ff;
+  --font-color: #21204a;
+  --mute: #787cb3;
+
+  --baseShade1: #54cc85;
+  --baseShade2: #479264;
+  --whiteShade1: #ffffff;
+  --whiteShade2: #f8fafb;
+  --blackShade1: #231c3b;
+  --blackShade2: #575a7b;
+
+  --baseFontSize: 1.6rem;
+
+  --headingFontSize1: 4rem;
+  --headingFontSize2: 3.2rem;
+  --headingFontSize3: 2rem;
+  --headingFontSize4: 1.8rem;
+
+  --borderRadius1: 1rem;
+  --borderRadius2: 0.5rem;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Scroll Indicator */
+
+/* Navigation */
