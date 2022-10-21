@@ -1,5 +1,6 @@
 const projects = [
   { name: 'record_player' },
+  { name: 'meditation_website' },
 ]
 const list = document.getElementById('list')
 
