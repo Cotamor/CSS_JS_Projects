@@ -31,8 +31,39 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+body {
+  background-color: gray;
+}
 /* Utility Classes */
 /* Header */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 3rem 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blue(0.8rem);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  font-size: var(--headingFontSize4);
+  text-decoration: none;
+}
+nav a#logo {
+  color: var(--blackShade1);
+  font-weight: 700;
+}
+nav ul a {
+  color: var(--whiteShade1);
+}
 /* SideMenu */
 /* Sticky Header */
 /* Section: Hero*/
