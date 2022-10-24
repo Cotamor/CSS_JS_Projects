@@ -21,10 +21,15 @@
     <link rel="stylesheet" href="queries.css" />
   </head>
   <body>
+    <!-- Scroll To Top Button -->
+    <button id="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <!-- Header -->
     <header>
       <nav>
         <a href="#home" id="logo">Cook Smart</a>
+        <i class="fas fa-bars" id="burger-menu"></i>
         <ul id="navbar">
           <li>
             <a href="#home">Home</a>
@@ -33,10 +38,10 @@
             <a href="#features">Features</a>
           </li>
           <li>
-            <a href="#Courses">Courses</a>
+            <a href="#courses">Courses</a>
           </li>
           <li>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#testimonial">Testimonials</a>
           </li>
           <li>
             <a href="#download-app">App</a>
@@ -46,9 +51,13 @@
     </header>
     <!-- Section: Hero -->
     <section id="home" class="hero">
-      <img src="imgs/header-shape.svg" class="header-img" alt="header image" />
+      <img
+        src="imgs/header-shape.svg"
+        id="header-shape"
+        alt="header background shape"
+      />
       <div class="hero-content">
-        <h1>Let's Make Learning Fun</h1>
+        <h1>Let's Make Cooking Fun</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
           reprehenderit quo nemo blanditiis est ducimus architecto dignissimos,
@@ -56,8 +65,8 @@
           quisquam unde eius harum, ipsum modi.
         </p>
         <div class="btn-container">
-          <button class="btn primary-btn">Start Learning</button>
-          <button class="btn secondary-btn">Explore More</button>
+          <button class="primary-btn btn">Start Learning</button>
+          <button class="secondary-btn btn">Explore More</button>
         </div>
       </div>
       <div class="hero-img">
@@ -65,10 +74,210 @@
       </div>
     </section>
     <!-- Section: Features -->
+    <section class="features" id="features">
+      <h2>Why Choose Us</h2>
+      <p class="section-description">
+        We at cooking smart provide you with engaging video lessons taught by
+        the top professional chefs using smart techniques.
+      </p>
+      <div class="row">
+        <div class="column">
+          <i class="fas fa-star"></i>
+          <h3>Engaging Lectures</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            commodi? Aliquam tenetur qui quaerat molestiae fuga explicabo
+            laudantium porro. A, quo.
+          </p>
+        </div>
+        <div class="column">
+          <i class="fas fa-thumbs-up"></i>
+          <h3>Top Chefs</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            commodi? Aliquam tenetur qui quaerat molestiae fuga explicabo
+            laudantium porro. A, quo. Itaque soluta cumque illo.
+          </p>
+        </div>
+        <div class="column">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Self Paced</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            commodi? Aliquam tenetur qui quaerat molestiae fuga explicabo
+            laudantium porro.
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- Section: Courses -->
+    <section class="courses" id="courses">
+      <h2>Our Popular Courses</h2>
+      <p class="section-description">
+        Width over 30,000 courses to choose form, check out most popular
+        courses.
+      </p>
+      <div class="row">
+        <div class="column">
+          <img src="imgs/online-lesson.jpg" />
+          <h3>Private Lessons</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            facilis, enim necessitatibus fugiat exercitationem suscipit!
+          </p>
+          <div class="courses-btn">
+            <button class="btn secondary-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="column">
+          <img src="imgs/vegitalian.jpg" />
+          <h3>Vegitarian Course</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            blanditiis, ex est tempora provident eligendi.
+          </p>
+          <div class="courses-btn">
+            <button class="btn secondary-btn">Learn More</button>
+          </div>
+        </div>
+        <div class="column">
+          <img src="imgs/baking.jpg" />
+          <h3>Baking Course</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            pariatur. Quidem cum impedit exercitationem sapiente?
+          </p>
+          <div class="courses-btn">
+            <button class="btn secondary-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Section: Testimonial -->
+    <section class="testimonial" id="testimonial">
+      <h2>What Our Students Say</h2>
+      <p class="section-description">
+        We provide a learning experience that is not available elsewhere. We
+        have over 50,000 happy students.
+      </p>
+      <div class="row">
+        <div class="column">
+          <div class="testimonial-image">
+            <img src="imgs/face-m1.jpg" alt="person image" />
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            iure accusantium fugiat dicta rem adipisci! Quam, at adipisci neque
+            vel tempora autem reprehenderit ab incidunt ad dolorum, doloremque
+            molestiae saepe?
+          </p>
+          <h3>Ben Afflec</h3>
+        </div>
+        <div class="column">
+          <div class="testimonial-image">
+            <img src="imgs/face-w2.jpg" alt="person image" />
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+            iure accusantium fugiat dicta rem adipisci! Quam, at adipisci neque
+            vel tempora autem reprehenderit ab incidunt ad dolorum.
+          </p>
+          <h3>Taylor Chen</h3>
+        </div>
+      </div>
+    </section>
     <!-- Section: Download App -->
+    <section class="download-app" id="download-app">
+      <h2>Download Our App</h2>
+      <p class="section-description">
+        Unlock all new amazing features with our mobile app
+      </p>
+      <div class="row">
+        <div class="column">
+          <img
+            src="imgs/download-app2.png"
+            class="phone-img"
+            alt="phone image"
+          />
+        </div>
+        <div class="column">
+          <div class="app-feature">
+            <div>
+              <i class="fas fa-star"></i>
+              <h3>Set Reminders</h3>
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              assumenda corporis et ipsa ad itaque error.
+            </p>
+          </div>
+          <div class="app-feature">
+            <div>
+              <i class="fas fa-star"></i>
+              <h3>Download Lectures</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae repellendus.
+            </p>
+          </div>
+          <div class="app-feature">
+            <div>
+              <i class="fas fa-star"></i>
+              <h3>20,000+ Lectures</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae repellendus.
+            </p>
+          </div>
+          <div class="download-btns">
+            <a href="#google-play">
+              <img src="imgs/google-play.png" alt="" />
+            </a>
+            <a href="#apple-store">
+              <img src="imgs/app-store.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
+    <footer>
+      <div class="row footer-about">
+        <h3>Cook Smart</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa
+          voluptas doloribus voluptate voluptatibus, voluptates soluta ad
+          perspiciatis esse! Itaque, sint. Aut magni quaerat esse voluptate nemo
+          minima unde ipsum!
+        </p>
+        <div class="social-links">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row footer-contact">
+        <div class="column">
+          <h4>Phone No</h4>
+          <p>+81 7088889999</p>
+        </div>
+        <div class="column">
+          <h4>Email</h4>
+          <p>contact@example.com</p>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        Copyright &copy; 2022 Cook Smart. All right reserved.
+      </p>
+    </footer>
     <!-- Script -->
     <script src="script.js"></script>
   </body>

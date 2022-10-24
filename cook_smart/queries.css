@@ -1,0 +1,148 @@
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+    /* font-size: 50%; */
+  }
+  .row {
+    flex-direction: column;
+  }
+  section,
+  footer {
+    padding: 7.5rem 5rem;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+  /* Section: Hero */
+  section.hero {
+    grid-template-columns: 1fr;
+    background: linear-gradient(
+      45deg,
+      rgb(var(--gradShade1)),
+      rgb(var(--gradShade2))
+    );
+  }
+  #header-shape {
+    display: none;
+  }
+  .hero-img {
+    grid-row: 1;
+  }
+  .hero-img img {
+    width: 70%;
+    margin: auto;
+  }
+  .hero .primary-btn:hover {
+    background-color: var(--baseShade2);
+    color: var(--whiteShade1);
+  }
+  .hero .secondary-btn:hover {
+    background-color: var(--baseShade2);
+    color: var(--whiteShade1);
+  }
+  nav a#logo {
+    color: var(--whiteShade1);
+  }
+  section.hero h1 {
+    text-align: center;
+    color: var(--whiteShade1);
+  }
+  section.hero p {
+    color: var(--whiteShade2);
+    text-align: center;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+  .hero .primary-btn {
+    background-color: var(--whiteShade1);
+    color: var(--baseShade1);
+  }
+  .hero .secondary-btn {
+    border-color: var(--whiteShade1);
+    color: var(--whiteShade1);
+  }
+  /* Features */
+
+  /* Courses */
+
+  /* Testimonial */
+
+  /* Download app */
+  .download-app .phone-img {
+    width: 50%;
+  }
+  .app-feature div {
+    justify-content: center;
+  }
+  .app-feature p {
+    text-align: center;
+  }
+  .download-btns {
+    justify-content: center;
+  }
+  .download-btns a img {
+    width: 20rem;
+    /* width: 15rem; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 2rem 4rem;
+  }
+  #burger-menu {
+    display: block;
+    color: var(--whiteShade1);
+    cursor: pointer;
+  }
+  nav a#logo,
+  #burger-menu {
+    font-size: var(--headingFontSize2);
+  }
+  nav ul {
+    background-color: var(--blackShade1);
+    position: fixed;
+    top: 70.4px;
+    left: -105vw;
+    height: calc(100vh - 70.4px);
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+  nav ul a {
+    font-size: var(--headingFontSize3);
+  }
+  .sticky nav ul a {
+    color: var(--whiteShade1);
+  }
+  nav ul a:hover {
+    color: var(--baseShade1);
+  }
+}
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  .btn-container {
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-inline: 4rem;
+    gap: 1rem;
+  }
+  .btn {
+    margin: 0;
+  }
+  .download-btns {
+    flex-direction: column;
+  }
+}
