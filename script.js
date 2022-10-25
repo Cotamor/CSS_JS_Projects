@@ -2,6 +2,7 @@ const projects = [
   { name: 'record_player' },
   { name: 'meditation_website' },
   { name: 'cook_smart' },
+  { name: 'fireworks' },
 ]
 const list = document.getElementById('list')
 
