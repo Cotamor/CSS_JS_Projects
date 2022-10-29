@@ -1,5 +1,8 @@
 # CSS & JS Projects
 
-these projects are all learned from Coding Artist youtube channel [link](https://www.youtube.com/c/CodingArtist).
+All project are learned from online tutorials below.
 
-watch it live [here](https://golden-druid-d2324a.netlify.app/)
+- Coding Artist [link](https://www.youtube.com/c/CodingArtist).
+- Lama Dev [link](https://www.youtube.com/c/LamaDev).
+
+You can watch it live [here](https://golden-druid-d2324a.netlify.app/)

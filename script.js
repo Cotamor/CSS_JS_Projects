@@ -3,6 +3,7 @@ const projects = [
   { name: 'meditation_website' },
   { name: 'cook_smart' },
   { name: 'fireworks' },
+  { name: 'portfolio' },
 ]
 const list = document.getElementById('list')
 
